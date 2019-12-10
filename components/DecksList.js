@@ -42,10 +42,11 @@ class DecksList extends Component {
     });
         return (
           decks !== null ? 
-               (<ScrollView style={styles.container}>
+               (<ScrollView>
+               <View style={styles.container}>
              {Object.keys(decks).map((deck)=>{
                return(
-                <Card style={styles.card} 
+                <Card style={styles.card} key={deck}
                 onPress={() => this.handlePress(deck)}>
                 <Animated.View style={cardScale}>
                 <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#7b68ee', 
@@ -59,6 +60,7 @@ class DecksList extends Component {
              }
              )
              }
+             </View>
             </ScrollView>)
             : 
             (
