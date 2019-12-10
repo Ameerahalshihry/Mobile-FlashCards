@@ -13,7 +13,7 @@ Then you can use it with Expo_CLI
 
 Navigate to the project folder in your terminal and type
 ```
-$ npm start
+$ expo start
 ```
  to start the local development server of Expo CLI.
 
